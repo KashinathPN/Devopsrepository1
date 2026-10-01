@@ -30,7 +30,7 @@ jobs:
       run: mvn package
 
     - name: Upload Build Artifact for Verification
-      uses: actions/artifacts@v4
+      uses: actions/upload-artifacts@v4
       with:
         name: production-ready-jar
         path: target/*.jar
